@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SizePutIn">
+
+<TextView
+    android:id="@+id/title_hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="首先，请输入你的身高和三围"
+    />
+
+<EditText
+    android:id="@+id/edit_text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:hint="输入身高"
+    android:layout_below="@+id/title_hint"
+    />
+
+
+<EditText
+    android:id="@+id/edit_text2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:hint="输入胸围"
+    android:layout_below="@+id/edit_text1"
+    />
+
+
+<EditText
+    android:id="@+id/edit_text3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:hint="输入腰围"
+    android:layout_below="@+id/edit_text2"
+    />
+
+
+<EditText
+    android:id="@+id/edit_text4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:hint="输入臀围"
+    android:layout_below="@+id/edit_text3"
+    />
+
+<Button
+    android:id="@+id/button_sure"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/edit_text4"
+    android:text="确认"/>
+
+</RelativeLayout>
