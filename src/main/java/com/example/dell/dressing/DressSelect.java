@@ -31,7 +31,7 @@ public class DressSelect extends AppCompatActivity {
         adapter.setOnItemClickListener(new DressAdapter.OnItemClickListener(){
             @Override
             public void onItemClick(View view, int position) {
-                Intent intent1 = new Intent(DressSelect.this, DressShow.class);
+                Intent intent1 = new Intent(DressSelect.this, ModelDispaly.class);
                 intent1.putExtras(intent.getExtras());
                 intent1.putExtra("position", String.valueOf(position));
                 startActivity(intent1);
@@ -40,10 +40,14 @@ public class DressSelect extends AppCompatActivity {
     }
 
     private void initDress() {
-        for (int i = 0; i <20; i ++) {
-            Dress xianyu = new Dress("Salty Fish", R.drawable.xianyu_pic);
-            dressList.add(xianyu);
-        }
+//        for (int i = 0; i <20; i ++) {
+//            Dress xianyu = new Dress("Salty Fish", R.drawable.xianyu_pic);
+//            dressList.add(xianyu);
+//        }
+        Dress zero = new Dress("first", R.drawable.zero);
+        dressList.add(zero);
+        Dress one = new Dress("second", R.drawable.one);
+        dressList.add(one);
     }
 
 }

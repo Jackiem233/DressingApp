@@ -16,9 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SizePutIn" />
+        <activity android:name=".SizeInput" />
         <activity android:name=".DressSelect" />
-        <activity android:name=".DressShow"></activity>
+        <activity android:name=".DressShow" />
+        <activity android:name=".ModelDispaly"></activity>
     </application>
 
 </manifest>
